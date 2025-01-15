@@ -1,0 +1,76 @@
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
+
+.container {
+display: flex;
+width: 80%;
+gap: 15px;
+}
+
+.img {size: 20px}/* style.css */
+
+/* Reset styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Container styling */
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 80%;
+    margin: auto;
+    gap: 10%;
+}
+
+/* Image styling */
+.container img {
+    width: 500px; /* Set a default size */
+    height: auto; /* Maintain aspect ratio */
+    border-radius: 10px; /* Rounded corners */
+    transition: transform 0.3s ease, box-shadow 0.3s ease; /* Smooth animation */
+}
+
+/* Hover effect for images */
+.container img:hover {
+    transform: scale(1.1); /* Slightly enlarge the image */
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.3); /* Add shadow effect */
+}
+
+/* Additional styles for the body */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f9f9f9;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+}
+
+header {
+    padding: 20px 0;
+    text-align: center;
+}
+
+/* Adding animation keyframes */
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+.container img {
+    animation: fadeIn 1s ease;
+}
